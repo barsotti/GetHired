@@ -1,0 +1,320 @@
+body {
+	background: white;
+}
+#topBanner {
+	position: fixed;
+}
+
+.field-img {
+	-webkit-transform: rotate(180deg);     /* Chrome and other webkit browsers */	  -moz-transform: rotate(180deg);        /* FF */
+ 	-o-transform: rotate(180deg);          /* Opera */
+	-ms-transform: rotate(180deg);         /* IE9 */
+	transform: rotate(180deg);
+	background-image: url("field.JPG");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: fixed;
+	right: 0%;
+	left: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.snow-img {
+	background-image: url("snowy.JPG");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: fixed;
+	right: 0%;
+	left: 0%;
+	top: 0%;
+	bottom: 0%;
+	opacity: 0.7;
+	z-index: -1;
+}
+.summary {
+  	position: relative;
+  	/*border: 3px solid black;*/
+  	top: 55px;
+  	margin: auto;
+	text-align: center;
+	width: 90%;
+	color: black;
+}
+
+#navCarousel {
+	z-index: -100;
+	margin: 100px auto;
+	position: static;
+	vertical-align: center;
+	height: 60%;
+	width: 70%;
+}
+
+#navCarousel img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.carousel-inner > .item > img, 
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+	position: static;
+	text-align: center;
+	top: 100px;
+  }
+
+.getBoxed {
+	border: 3px solid black;
+	background: white;
+	color: black;
+}
+
+#buttons {
+	position: relative;
+	margin: 15px auto;
+	width: 50%;
+	top: 0px;
+}
+
+#contact {
+	position: relative;
+	text-decoration: none;
+	top: 100px;
+	color: white;
+}
+
+.backfader {
+	position: fixed;
+	width: 100%;
+	height: 100%%;
+	background: black;
+	opacity: 0.9;
+	z-index: 90;
+	color: black;
+	visibility: visible;
+}
+
+.backfader div {
+	position: fixed;
+	width: 500px;
+	height: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: 100px;
+	background: white;
+	padding: 50px 25px;
+	z-index: 100;
+	opacity: 1;
+	border: 2px solid black;
+	color: black;
+	visibility: visible;
+}
+#loginpage {
+	position: fixed;
+	width: 500px;
+	height: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: 100px;
+	background: white;
+	padding: 50px 25px;
+	z-index: 100;
+	opacity: 1;
+	border: 2px solid black;
+	color: black;
+	visibility: visible;
+}
+
+#signuppage {
+	position: fixed;
+	width: 500px;
+	height: 50%;
+	left: 50%;
+	margin-left: -250px;
+	margin-top: 100px;
+	background: white;
+	padding: 50px 25px;
+	z-index: 100;
+	opacity: 1;
+	border: 2px solid black;
+	color: black;
+	visibility: visible;
+}
+
+#stripes {
+	position: relative;
+	top: 80px;
+	width: 75%;
+	height: 100%;
+	opacity: 0.8;
+	margin: auto;
+}
+
+.conts {
+	font-size: 150%;
+}
+
+.conts li {
+	
+}
+
+#beginner {
+	background: lightgreen;
+	height: 40%;
+
+}
+
+#intermediate {
+	margin: 0;
+	background: yellow;
+	/*height: 40%;*/
+}
+
+#advanced {
+	background: Orangered;
+	height: 40%;
+	color: white;
+}
+
+#profilepicfiller {
+	padding: 10px 20px 10px 20px;
+	background: grey;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+#topbox {
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(255,255,255,.4);
+	color: black;
+	width: 90%;
+	height: 40%;
+	margin: 70px 100px auto 30px;
+	border: 3px solid black;
+	float: left;
+}
+
+#top {
+	z-index: 1;
+	margin: 70px auto;
+	width: 85%;
+	height: 50%;
+	border: 2px solid black;
+	background-color: rgba(255,255,255,.4);
+	visibility: visible;
+}
+
+#toppic {
+	background: grey;
+	width: 30%;
+	height: 80%;
+	float: left;
+	border: 1px dotted white;
+}
+
+#topcontents {
+	float: left;
+	width: 70%;
+	height: 80%;
+	border: 1px dotted blue;
+}
+
+#propic {
+	float: left;
+	margin: 5px auto 0 6%;
+}
+
+#profilepicmgr {
+	position: absolute;
+	width: 400px;
+	height: 50%;
+	left: 50%;
+	margin: 120 0 0 -250px;
+	background: white;
+	padding: 50px 25px;
+	z-index: 100;
+	border: 2px solid black;
+	color: black;
+	display: none;
+	z-index: 10;
+}
+
+#picholder {
+	position: absolute;
+	vertical-align: middle;
+	float: middle;
+	top: 65px;
+	height: 150px;
+	width: 150px;
+	left: 50%;
+	margin-left: -75px;
+	display: inline-block;
+	background: blue;
+	text-align: center;
+	opacity: 0.2;
+}
+
+#instructions {
+	position: absolute;
+	bottom: 15px;
+	vertical-align: middle;
+}
+
+#submit {
+	float: right;
+	margin: 5px 40% 0 auto
+}
+
+#portfolio {
+	margin: 25px auto;
+	width: 85%;
+	height: 90%;
+	border: 2px solid black;
+	background: white;
+	visibility: visible;
+	background-color:rgba(255,255,255,.4);
+}
+
+#myprojects {
+	width: 90%;
+	height: 20%;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+	border: 3px dotted blue;
+}
+
+.projcontents {
+	width: 100%;
+	height: 75%;
+	text-align: center;
+	vertical-align: middle;
+	border: 3px dotted red;
+}
+
+.project {
+	width: 100%;
+	height: 33%;
+	background: black;
+	border: 1px solid white;
+	opacity: 0.4
+}
+
+.project > h1, .project > h5 {
+	opacity: 1;
+	color: white;
+	float: left;
+	display: block;
+}
+
+
+
+
+
+
+

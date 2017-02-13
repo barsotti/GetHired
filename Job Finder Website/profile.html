@@ -1,0 +1,206 @@
+<html>
+<head>
+	<!-- Optional theme -->
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css' integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp' crossorigin='anonymous'>
+	<!-- Latest compiled and minified CSS -->
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+
+	<title>My Profile</title>
+</head>
+<body>
+
+	<div class="snow-img"></div>
+	<!-- Navigation Bar at top -->
+		<nav class='navbar navbar-default navbar-fixed-top navbar-inverse'>
+		  <div class='container-fluid'>
+		    <div class='navbar-header'>
+		      <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false'>
+		        <span class='sr-only'>Toggle navigation</span>
+		        <span class='icon-bar'></span>
+		        <span class='icon-bar'></span>
+		        <span class='icon-bar'></span>
+		      </button>
+		      <a class='navbar-brand' href='index.html'>Which Came First</a>
+		    </div>
+
+		    <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+		      <ul class='nav navbar-nav'>
+		        <li><a href='profile.html'>Profile</a></li>
+		        <li><a href='projects.html'>Gain Experience</a></li>
+		        <li><a href='apply.html'>Apply</a></li>
+		      </ul>
+		      <ul class='nav navbar-nav navbar-right'>
+		        <li><a href='#' onclick="togglecreate()">Get Started</a></li>
+		        <li><a href='#' onclick="togglelogin()">Log in</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+	<!-- Log in Page -->
+	<div id="signuppage" style="visibility: hidden;">
+		<form>
+      		<fieldset>
+		        <legend>Sign Up</legend>
+		        <p>
+		          <label>Create Username</label>
+		          <input type = "text"
+		                 id = "myText"
+		                 value = "Username" />
+		        </p>
+		        <p>
+		          <label>Create Password</label>
+		          <input type = "password"
+		                 id = "myPwd"
+		                 value = "secret" />
+		        </p>
+		        <p>
+		        	<label>Confirm Password</label>
+		        	<input type = "Password"
+		        		   id = "myPwd"
+		        		   value = "secret" />
+		        </p>
+		        <button onclick="construction()">Submit</button>
+		        <button onclick="togglecreate()">Close</button>
+		        <p>Log in to access your profile, change your emblem, upload projects and take full advantage of our project.</p>
+	      	</fieldset>
+	    </form>
+	</div>
+
+	<div id="loginpage" style="visibility: hidden;">
+		<form>
+      		<fieldset>
+		        <legend>Log in</legend>
+		        <p>
+		          <label>Username</label>
+		          <input type = "text"
+		                 id = "myText"
+		                 value = "Username" />
+		        </p>
+		        <p>
+		          <label>Password</label>
+		          <input type = "password"
+		                 id = "myPwd"
+		                 value = "secret" />
+		        </p>
+		        <button onclick="construction()">Submit</button>
+		        <button onclick="togglelogin()">Close</button>
+		        <p>Log in to access your profile, change your emblem, upload projects and take full advantage of our project.</p>
+	      	</fieldset>
+	    </form>
+	</div>
+
+	<div id="profilepicmgr">
+		<div id="picholder"></div>
+		<div id="instructions">
+			<h3>Find and upload your profile picture.</h3>
+			<input type="file" name="filename" accept="image/gif, image/jpeg, image/png">
+		</div>
+	</div>
+
+
+		<!-- summary-->
+	<h4 class="summary">Get noticed by employers by uploading and managing your resumes, creating and updating your portfolio, and adding your objective.</h4>
+
+	<div id="top">
+		<div id="toppic"></div>
+		<div id="topcontents">
+			<form>
+	      		<fieldset>
+			        <!--<legend>Sign Up</legend>-->
+			        <p>
+			        	<label>Summary:</label><br>
+			        	<textarea
+			    			id = "myTextArea"
+			        		rows = "2"
+			        		cols = "50"
+			        		placeholder="Aspiring full stack developer..."></textarea>
+			        </p>
+			        <p>
+			          <label>Desired Title:</label>
+			          <textarea
+			          	rows="1"
+			          	cols="35"
+			          	placeholder="Software Engineer..."></textarea>
+			        </p>
+			        <p>
+			          <label>Education:</label>
+			          <textarea
+			          	rows="1"
+			          	cols="35"
+			          	placeholder="B.A. in Economics from Virginia Tech"></textarea>
+			        </p>
+			        <h4>Choose an emblem, upload a brief description about yourself, and fill in the quick facts about yourself. This will be seen by recruiters so keep it sfw!</h4>
+		      	</fieldset>
+		    </form>
+		</div>
+		<button id="propic" onclick="togglepicmgr()">Update Profile Picture</button>
+		<button id="submit">Save Your Summary</button>
+	</div>
+
+	<div id="portfolio">
+		<div id="myprojects"><h1><u>My Projects</u></h1></div>
+		<div class="projcontents"><p>Upload projects to show off your work to recruiters.</p>
+			<div class="project">
+				<h1><u>Title</u></h1>
+				<h5><u>Technologies Used: </u></h5>
+				<h5><u>Link</u></h5>
+				<h5><u>Endoresments</u>:</h5>
+			</div>
+			<div class="project"></div>
+			<div class="project"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+<script>
+function togglelogin() {
+	var feature = document.getElementById("loginpage");
+	var other = document.getElementById("signuppage");
+	if (feature.style.visibility == "hidden") {
+		feature.style.visibility = "visible";
+	}
+	else {
+		feature.style.visibility = "hidden";
+	}
+	other.style.visibility = "hidden";
+}
+function togglecreate() {
+	var feature = document.getElementById("signuppage");
+	var other = document.getElementById("loginpage");
+	if (feature.style.visibility == "hidden") {
+		feature.style.visibility = "visible";
+	}
+	else {
+		feature.style.visibility = "hidden";
+	}
+	other.style.visibility = "hidden";
+}
+function togglepicmgr() {
+	var feature = document.getElementById("profilepicmgr");
+	if (feature.style.display == "none") {
+		feature.style.display = "inline";
+	}
+	else {
+		feature.style.display = "none";
+	}
+}
+
+
+
+</script>
+
+
+</body>
+</html>
