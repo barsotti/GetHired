@@ -28,11 +28,6 @@ html,body {
 }
 
 .snow-img {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
- 	-o-transform: rotate(180deg);  
-	-ms-transform: rotate(180deg);
-	transform: rotate(180deg);
 	background-image: url("snowy.JPG");
 	background-repeat: no-repeat;
 	background-size: 100%;
