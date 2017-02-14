@@ -44,8 +44,7 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-
-	<div class="backfader" style="visibility: hidden;">
+	
 		<div id="signuppage" style="visibility: hidden;">
 			<form>
 	      		<fieldset>
@@ -97,7 +96,6 @@
 		      	</fieldset>
 		    </form>
 		</div>
-	</div>
 
 
 		<!-- summary-->
@@ -110,14 +108,11 @@
 function togglelogin() {
 	var feature = document.getElementById("loginpage");
 	var other = document.getElementById("signuppage");
-	var backfader = document.getElementById("backfader");
 	if (feature.style.visibility == "hidden") {
-		/*feature.style.visibility = "visible";*/
-		backfader.style.visibility = "visible";
+		feature.style.visibility = "visible";
 	}
 	else {
-		/*feature.style.visibility = "hidden";*/
-		backfader.style.visibility = "hidden";
+		feature.style.visibility = "hidden";
 	}
 	other.style.visibility = "hidden";
 }
