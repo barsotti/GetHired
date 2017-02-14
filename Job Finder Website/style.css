@@ -88,32 +88,6 @@ body {
 	color: white;
 }
 
-.backfader {
-	position: fixed;
-	width: 100%;
-	height: 100%%;
-	background: black;
-	opacity: 0.9;
-	z-index: 90;
-	color: black;
-	visibility: visible;
-}
-
-.backfader div {
-	position: fixed;
-	width: 500px;
-	height: 50%;
-	left: 50%;
-	margin-left: -250px;
-	margin-top: 100px;
-	background: white;
-	padding: 50px 25px;
-	z-index: 100;
-	opacity: 1;
-	border: 2px solid black;
-	color: black;
-	visibility: visible;
-}
 #loginpage {
 	position: fixed;
 	width: 500px;
