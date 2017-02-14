@@ -18,7 +18,7 @@ field-img {
 	transform: rotate(180deg);
 	background-image: url("field.JPG");
 	background-repeat: no-repeat;
-	position: relative;
+	position: fixed;
 	width: 100%;
     	height: 100%;
     	background-size: cover;
@@ -31,7 +31,7 @@ field-img {
 .snow-img {
 	background-image: url("snowy.JPG");
 	background-repeat: no-repeat;
-	position: relative;
+	position: fixed;
 	width: 100%;
     	height: 100%;
    	background-size: cover;
